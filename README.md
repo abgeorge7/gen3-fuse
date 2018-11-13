@@ -6,7 +6,9 @@ gen3-fuse is an S3 file system built on Goofys that uses the workspace-token-ser
 ----
 ## Overview
 
+This repository supports the same functionality as Goofys, but doesn't require user to have AWS credentials. Instead, we use the [workspace-token-service](https://github.com/uc-cdis/workspace-token-service) for authentication.
 
+See the [goofys documentation](https://github.com/kahing/goofys) for a discussion of FUSE and s3. 
 
 ----
 
