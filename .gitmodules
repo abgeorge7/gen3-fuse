@@ -1,6 +1,12 @@
-[submodule "goofys"]
-	path = goofys
-	url = https://github.com/kahing/goofys
 [submodule "github.com/kahing/goofys"]
 	path = vendor/github.com/kahing/goofys
 	url = git@github.com:kahing/goofys
+[submodule "github.com/jacobsa/fuse"]
+	path = vendor/github.com/jacobsa/fuse
+	url = git@github.com:jacobsa/fuse
+[submodule "github.com/jinzhu/copier"]
+	path = vendor/github.com/jinzhu/copier
+	url = git@github.com:jinzhu/copier
+[submodule "github.com/sirupsen/logrus"]
+	path = vendor/github.com/sirupsen/logrus
+	url = git@github.com:sirupsen/logrus
