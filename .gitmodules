@@ -1,3 +1,6 @@
 [submodule "goofys"]
 	path = goofys
 	url = https://github.com/kahing/goofys
+[submodule "github.com/kahing/goofys"]
+	path = vendor/github.com/kahing/goofys
+	url = git@github.com:kahing/goofys
