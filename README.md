@@ -19,6 +19,7 @@ See the [goofys documentation](https://github.com/kahing/goofys) for a discussio
 Use the --recursive flag when you clone this repository to ensure you download the content of any submodules.
 
     git clone --recursive https://github.com/uc-cdis/gen3-fuse.git
+    git submodule update --init --recursive
 
 ----
 ## References
