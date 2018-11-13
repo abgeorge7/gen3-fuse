@@ -1,26 +1,20 @@
 package main
 
 import (
-	"fmt"
-	"log"
 	//"encoding/json"
+	"fmt"
 	"github.com/gorilla/mux"
+	"log"
 	"net/http"
 )
 
 func auth_url_handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
-
-	params := mux.Vars(r)
-	authorization_URL := params["authorization_url"]
-
-	fmt.Println(authorization_URL)
-
+	w.Header().Set("Content-Type", "application/json")
+	w.Write([]byte("{'success': 'connected with fence'}"))
 }
 
 func token_handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
-	// fmt.Println(r.Form)
 
 	expires, ok := r.URL.Query()["expires"]
 
@@ -38,7 +32,7 @@ func token_handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	router := mux.NewRouter()
 
-	router.HandleFunc("/oauth2/{authorization_url}", auth_url_handler).Methods("GET")
+	router.HandleFunc("/oauth2/authorization_url", auth_url_handler).Methods("GET")
 	router.HandleFunc("/token", token_handler).Methods("GET")
 	log.Fatal(http.ListenAndServe("localhost:8001", router))
 }
