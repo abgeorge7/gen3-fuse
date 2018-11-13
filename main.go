@@ -5,10 +5,9 @@ import (
 
 	"github.com/kahing/goofys/api"
 
-	// goofys "goofys/api"
-	// . "goofys/internal"
 )
 
 func main() {
 	fmt.Println("Hello!")
+	fmt.Println(goofys.NewGoofys)
 }

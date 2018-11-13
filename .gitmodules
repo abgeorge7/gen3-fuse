@@ -10,3 +10,9 @@
 [submodule "github.com/sirupsen/logrus"]
 	path = vendor/github.com/sirupsen/logrus
 	url = git@github.com:sirupsen/logrus
+[submodule "github.com/shirou/gopsutil"]
+	path = vendor/github.com/shirou/gopsutil
+	url = git@github.com:shirou/gopsutil
+[submodule "github.com/urfave/cli"]
+	path = vendor/github.com/urfave/cli
+	url = git@github.com:urfave/cli
