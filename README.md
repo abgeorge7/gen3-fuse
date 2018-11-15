@@ -1,6 +1,6 @@
 # gen3-fuse
 
-gen3-fuse is an S3 file system built on Goofys that uses the workspace-token-service. 
+gen3-fuse is an S3 file system built on [Goofys](https://github.com/kahing/goofys) that uses the [workspace-token-service](https://github.com/uc-cdis/workspace-token-service). 
 
 ## Overview
 
