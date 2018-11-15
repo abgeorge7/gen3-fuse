@@ -16,7 +16,14 @@ See the [goofys documentation](https://github.com/kahing/goofys) for a discussio
 
 ----
 
-Use the --recursive flag when you clone this repository to ensure you download the content of any submodules.
+You can build from source (master branch only) with Go 1.9 or later:
+
+    go get -u github.com/uc-cdis/gen3-fuse
+    go install github.com/uc-cdis/gen3-fuse
+
+
+
+If you want to clone this repository, use the --recursive flag to ensure you download the content of any submodules.
 
     git clone --recursive https://github.com/uc-cdis/gen3-fuse.git
     git submodule update --init --recursive
